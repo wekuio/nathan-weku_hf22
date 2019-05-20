@@ -52,7 +52,7 @@ sudo screen -r WEKU-witness
 
 #### If you did the optional step about linux swap management
 Revert to default values once your replay is done. 
-default
+
 ```
 echo    10 | sudo tee /proc/sys/vm/dirty_background_ratio
 sudo rm -fr /proc/sys/vm/dirty_expire_centisec
