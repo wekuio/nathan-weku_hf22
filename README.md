@@ -55,7 +55,7 @@ Revert to default values once your replay is done.
 default
 ```
 echo    10 | sudo tee /proc/sys/vm/dirty_background_ratio
-sudo rm -fr sudo tee /proc/sys/vm/dirty_expire_centisec
+sudo rm -fr /proc/sys/vm/dirty_expire_centisec
 echo    20 | sudo tee /proc/sys/vm/dirty_ratio
 sudo rm -fr /proc/sys/vm/dirty_writeback_centisec
 ```
