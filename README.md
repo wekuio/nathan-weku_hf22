@@ -1,5 +1,5 @@
 # Witness deployment from binaries
-Step by step for dummies
+Step by step for dummies, only for UBUNTU 16.04
 
 #### Go to your home directory
 ```
