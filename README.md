@@ -11,8 +11,7 @@ Install git, screen and nano editor, move to home folder, clone repository
 ```
 sudo apt-get install git nano screen
 cd ~
-git clone https://github.com/nnnarvaez/weku_witness_in_a_box/
-cd weku_witness_in_a_box
+git clone https://github.com/nnnarvaez/weku_witness_in_a_box/ && cd weku_witness_in_a_box
 ```
 
 #### Edit config file
