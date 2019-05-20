@@ -9,9 +9,13 @@ cd ~
 #### Download
 Install git, screen and nano editor, move to home folder, clone repository
 ```
+
 sudo apt-get install git nano screen
+
 cd ~
-git clone https://github.com/nnnarvaez/weku_witness_in_a_box/ && cd weku_witness_in_a_box
+
+git clone https://github.com/nnnarvaez/weku_witness_in_a_box/ 
+
 ```
 
 #### Edit config file
@@ -20,7 +24,10 @@ Once added press: `<CTRL-X> <Y> <ENTER>`
 control X requests to exit, it will ask if you want to save the changes, the Y tells it that yes you want, and asks for a filename, you press enter to overwrite the original `config.ini`
 
 ```
+cd weku_witness_in_a_box
+
 nano ./witness_node_data_dir/config.ini
+
 ```
 
 #### Optional: Optimize linux swap management to speed replays
@@ -37,7 +44,7 @@ This step will take long time (many hours) you can press `<CTRL> <A> <D>` to sen
 
 ```
 sudo screen -dmS WEKU-witness
-sudo screen -r
+sudo screen -r WEKU-witness
 ./wekud
 ```
 
