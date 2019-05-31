@@ -1,4 +1,6 @@
-# Witness deployment from binaries
+# Witness deployment from binaries HF21
+This are the files and steps needed to instal wekud HardFork21
+
 Step by step for dummies, only for UBUNTU 16.04
 
 #### Go to your home directory
