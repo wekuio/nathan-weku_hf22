@@ -1,15 +1,14 @@
-# Witness deployment from binaries HF21
+# Witness deployment from binaries HF22
 This are the files and steps needed to instal wekud HardFork21
 
 Step by step for dummies, only for UBUNTU 16.04
 
-#### Go to your home directory
-```
-cd ~
-```
+This tutorial assumes you know how to login remotely to your server using shh or whatever you prefer, if that is not the case, maybe you don't have bare minimum knowledge pre-requirements to run a witness node.
 
-#### Download
-Install git, screen and nano editor, move to home folder, clone repository
+
+
+#### First steps: 
+Install git, screen and nano editor, move to home folder, clone repository (download)
 ```
 
 sudo apt-get install git nano screen
@@ -50,7 +49,13 @@ sudo screen -r WEKU-witness
 ./wekud
 ```
 
+#### Recovering the screen from the backgroud to monitor WEKU daemon
 
+```
+sudo screen -r WEKU-witness
+```` 
+
+To exit again press: `<CTRL> <A> <D>`
 
 #### If you did the optional step about linux swap management
 Revert to default values once your replay is done. 
