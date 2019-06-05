@@ -34,10 +34,10 @@ nano ./witness_node_data_dir/config.ini
 #### Optional: Optimize linux swap management to speed replays
 For the daring and dangerous.
 ```
-echo    75 | sudo tee /proc/sys/vm/dirty_background_ratio
-echo  1000 | sudo tee /proc/sys/vm/dirty_expire_centisec
-echo    80 | sudo tee /proc/sys/vm/dirty_ratio
-echo 30000 | sudo tee /proc/sys/vm/dirty_writeback_centisec
+echo    75 | sudo tee /proc/sys/vm/dirty_background_ratio &&
+echo  1000 | sudo tee /proc/sys/vm/dirty_expire_centisecs &&
+echo    80 | sudo tee /proc/sys/vm/dirty_ratio &&
+echo 30000 | sudo tee /proc/sys/vm/dirty_writeback_centisecs
 ``` 
 
 #### Run the WEKU daemon 
@@ -61,8 +61,8 @@ To exit again press: `<CTRL> <A> <D>`
 Revert to default values once your replay is done. 
 
 ```
-echo    10 | sudo tee /proc/sys/vm/dirty_background_ratio
-sudo rm -fr /proc/sys/vm/dirty_expire_centisec
-echo    20 | sudo tee /proc/sys/vm/dirty_ratio
-sudo rm -fr /proc/sys/vm/dirty_writeback_centisec
+echo    10 | sudo tee /proc/sys/vm/dirty_background_ratio &&
+sudo rm -fr /proc/sys/vm/dirty_expire_centisecs &&
+echo    20 | sudo tee /proc/sys/vm/dirty_ratio &&
+sudo rm -fr /proc/sys/vm/dirty_writeback_centisecs 
 ```
