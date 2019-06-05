@@ -1,5 +1,5 @@
 # Witness deployment from binaries HF22
-This are the files and steps needed to instal wekud HardFork21
+This are the files and steps needed to instal wekud HardFork22
 
 Step by step for dummies, only for UBUNTU 16.04
 
@@ -15,7 +15,7 @@ sudo apt-get install git nano screen
 
 cd ~
 
-git clone https://github.com/nnnarvaez/weku_witness_in_a_box/ 
+git clone https://github.com/nnnarvaez/weku_hf22/ 
 
 ```
 
@@ -25,7 +25,7 @@ Once added press: `<CTRL-X> <Y> <ENTER>`
 control X requests to exit, it will ask if you want to save the changes, the Y tells it that yes you want, and asks for a filename, you press enter to overwrite the original `config.ini`
 
 ```
-cd weku_witness_in_a_box
+cd weku_hf22
 
 nano ./witness_node_data_dir/config.ini
 
