@@ -1,5 +1,18 @@
 # Some dependencies might be needed
 
+## First try this
+
+```
+sudo apt-get install -y \
+    doxygen \
+    libncurses5-dev \
+    libreadline-dev \
+    perl
+
+```
+
+If that does not allow wekud and / or cli_walletHF22 to start, then do the instructions below.
+
 
 #### Required packages
 ```
