@@ -19,11 +19,6 @@ git clone https://github.com/nnnarvaez/weku_hf22/
 
 ```
 
-**NOTE:** 
-
-* You might need other dependencies an C++ libraries, if after following this instructions your wekud or cli_walletHF22 result in an error **AND DO NOT START** please [try this](https://github.com/nnnarvaez/weku_hf22/blob/master/dependencies.md)
-* It is also adviced to read the error
-
 ---
 
 #### Edit config file
@@ -72,4 +67,28 @@ echo    10 | sudo tee /proc/sys/vm/dirty_background_ratio &&
 sudo rm -fr /proc/sys/vm/dirty_expire_centisecs &&
 echo    20 | sudo tee /proc/sys/vm/dirty_ratio &&
 sudo rm -fr /proc/sys/vm/dirty_writeback_centisecs 
+```
+
+---
+
+## NOTES: 
+
+* You might need other dependencies an C++ libraries, if after following this instructions your wekud or cli_walletHF22 result in an error **AND DO NOT START** please [try this](https://github.com/nnnarvaez/weku_hf22/blob/master/dependencies.md)
+* It is also adviced to read the error
+* If `wekud` starts it is normal to see lots of red messages (these are the rejected blocks form the mainNET running HF21) you need to look carefully in between those error message for you node producing blocks.
+
+**The Block production looks like this:**
+
+```
+1272001ms th_a       database.cpp:3112             update_last_irrevers ] log_head_num: 10428173
+1272001ms th_a       database.cpp:3113             update_last_irrevers ] last irreversible block num: 10428173
+1272001ms th_a       witness_plugin.cpp:566        block_production_loo ] Generated block #10428857 with timestamp 2019-06-07T11:21:12 at time 2019-06-07T11:21:12 by nnnarvaez
+
+```
+**The Blocks received from another node running HF22 look like this:**
+
+```
+1305010ms th_a       database.cpp:3112             update_last_irrevers ] log_head_num: 10428173
+1305010ms th_a       database.cpp:3113             update_last_irrevers ] last irreversible block num: 10428173
+1305010ms th_a       application.cpp:534           handle_block         ] Got 0 transactions on block 10428864 by spoiler -- latency: 10 ms
 ```
