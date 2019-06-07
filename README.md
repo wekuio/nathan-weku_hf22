@@ -19,8 +19,12 @@ git clone https://github.com/nnnarvaez/weku_hf22/
 
 ```
 
-**NOTE:** You might need other dependencies an C++ libraries, if after following this instructions your wekud or cli_walletHF22 result in an error please [try this](https://github.com/nnnarvaez/weku_hf22/blob/master/dependencies.md)
+**NOTE:** 
 
+* You might need other dependencies an C++ libraries, if after following this instructions your wekud or cli_walletHF22 result in an error **AND DO NOT START** please [try this](https://github.com/nnnarvaez/weku_hf22/blob/master/dependencies.md)
+* It is also adviced to read the error
+
+---
 
 #### Edit config file
 Add your witness name and private WIF
